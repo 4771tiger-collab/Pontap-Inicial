@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pontapé Inicial — 39日で話せるブラジル・ポルトガル語</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="home">
+  <header class="site-header">
+    <div class="brand">
+      <h1 class="title">Pontapé Inicial — 39日で話せるブラジル・ポルトガル語</h1>
+      <p class="subtitle">39日×反復音声トレーニングで“考えずに口から出る”をつくる</p>
+    </div>
+  </header>
+
+  <main class="home-main">
+    <section class="hero card">
+      <h2>学習プログラム</h2>
+      <p>1日1テーマ・全39日。各日の例文を「表示の出し分け」と「3種類の音声」で徹底反復します。</p>
+      <div class="cta-row">
+        <a id="startDay1" class="btn" href="./learn.html#day=1">Day 1 から始める</a>
+        <a id="resumeBtn" class="btn ghost" href="./learn.html">続きから</a>
+      </div>
+      <small class="muted">ブラウザの音声合成（Web Speech API）を使用。音声設定は学習画面右上の「音声設定」から。</small>
+    </section>
+
+    <section class="card">
+      <h3>3つの音声モード</h3>
+      <ul class="bullet">
+        <li><strong>A: 暗記用</strong> — 分割日本語→分割ポルトガル語→日本語全文→PT全文の順で読み上げ</li>
+        <li><strong>B: 瞬間翻訳</strong> — 分割日本語→日本語全文のみ（考える時間を挟む）</li>
+        <li><strong>C: リスニング</strong> — ポルトガル語全文のみ</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3>表示の出し分け</h3>
+      <p>日本語全文 / 分割日本語（ヒント） / ポルトガル語全文 を、ページ全体または各文ごとにON/OFFできます。</p>
+    </section>
+
+    <section class="card">
+      <h3>1日の回し方（目安10–15分）</h3>
+      <ol class="bullet">
+        <li>音声Aで全体像→部分→全文の流れを掴む</li>
+        <li>音声Bで日本語→PTを瞬時に組み立てる練習（考える時間を調整）</li>
+        <li>音声CでPTを聞き流しつつ復唱</li>
+        <li>ズレは表示ONで確認、できたら「✓達成」</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>初期版MVP（静的HTML/CSS/JS）。進捗は端末のローカルに保存されます。</small>
+  </footer>
+
+  <script>
+    // 「続きから」ボタンを最終学習日に差し替え
+    (function(){
+      const idxStr = localStorage.getItem('pi-last-day-index');
+      const resume = document.getElementById('resumeBtn');
+      if (idxStr !== null) {
+        const idx = Number(idxStr) || 0;
+        const dayNum = (idx + 1);
+        resume.textContent = `続きから（Day ${dayNum}）`;
+        resume.href = `./learn.html#day=${dayNum}`;
+      } else {
+        resume.textContent = '続きから（未開始）';
+        resume.classList.add('disabled');
+        resume.href = './learn.html#day=1';
+      }
+    })();
+  </script>
+</body>
+</html>
