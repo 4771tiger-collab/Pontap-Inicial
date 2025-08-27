@@ -222,14 +222,14 @@ const DATA = [
         jpFull: "明日行ける？",
         jpHints: ["あなた", "できる", "行く", "明日", "？"],
         ptFull: "Você pode ir amanhã?",
-        ptSplit: ["Você", "pode ir", "amanhã?"]
+        ptSplit: ["Você", "pode", "ir", "amanhã?"]
       },
       {
         id: "4-6",
         jpFull: "これでいい？",
-        jpHints: ["これで", "いい", "？"],
-        ptFull: "Pode ser?",
-        ptSplit: ["Pode ser?"]
+        jpHints: ["これで", "いる（状態）", "いい", "？"],
+        ptFull: "Assim tá bom?",
+        ptSplit: ["Assim", "tá", "bom?"]
       },
       {
         id: "4-7",
@@ -282,9 +282,9 @@ const DATA = [
       {
         id: "5-5",
         jpFull: "今日は水をたくさん飲みます。",
-        jpHints: ["今日", "私", "飲む", "水を", "たくさん"],
+        jpHints: ["今日", "私", "飲む", "たくさん", "水を"],
         ptFull: "Hoje eu bebo muita água.",
-        ptSplit: ["Hoje", "eu bebo", "muita água"]
+        ptSplit: ["Hoje", "eu", "bebo", "muita", "água"]
       },
       {
         id: "5-6",
@@ -365,9 +365,9 @@ const DATA = [
       {
         id: "6-8",
         jpFull: "これはポルトガル語で何て言うの？",
-        jpHints: ["どう", "言う（se diz）", "これを", "ポルトガル語で", "？"],
+        jpHints: ["どう", "言う", "これを", "ポルトガル語で", "？"],
         ptFull: "Como se diz isso em português?",
-        ptSplit: ["Como se diz", "isso", "em português?"]
+        ptSplit: ["Como", "se diz", "isso", "em português?"]
       }
     ]
   },
@@ -380,14 +380,14 @@ const DATA = [
         jpFull: "暑いよね？",
         jpHints: ["いる（状態）", "暑い", "ね？"],
         ptFull: "Tá quente, né?",
-        ptSplit: ["Tá quente,", "né?"]
+        ptSplit: ["Tá", "quente,", "né?"]
       },
       {
         id: "7-2",
         jpFull: "これ、難しいよね？",
         jpHints: ["これ", "です", "難しい", "ね？"],
         ptFull: "Isso é difícil, né?",
-        ptSplit: ["Isso", "é difícil,", "né?"]
+        ptSplit: ["Isso", "é", "difícil,", "né?"]
       },
       {
         id: "7-3",
@@ -401,12 +401,12 @@ const DATA = [
         jpFull: "ここ、空いてるよね？",
         jpHints: ["ここ", "いる（状態）", "空いている", "ね？"],
         ptFull: "Aqui tá livre, né?",
-        ptSplit: ["Aqui", "tá livre,", "né?"]
+        ptSplit: ["Aqui", "tá", "livre,", "né?"]
       },
       {
         id: "7-5",
         jpFull: "少し待ってて、いい？",
-        jpHints: ["待つ", "少し", "ね？"],
+        jpHints: ["待つ", "少し", "いい？"],
         ptFull: "Espera um pouco, tá?",
         ptSplit: ["Espera", "um pouco,", "tá?"]
       },
@@ -429,7 +429,7 @@ const DATA = [
         jpFull: "後で電話するよ、いい？",
         jpHints: ["私", "あなたに", "電話する", "後で", "ね？"],
         ptFull: "Eu te ligo depois, tá?",
-        ptSplit: ["Eu", "te ligo", "depois,", "tá?"]
+        ptSplit: ["Eu", "te", "ligo", "depois,", "tá?"]
       }
     ]
   },
